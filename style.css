@@ -53,6 +53,7 @@ table {
 :root{
 	--pink: #f79d92;
     --pinkhover: #f88d7e;
+	--red: rgb(174, 6, 6);
 	--black:#020202;
 	--graywhite: #e3e5e7;
     --white: #FFFF;
@@ -62,6 +63,11 @@ body{
     width: 1280px;
     margin: 0 auto;
     font-family:var(--font-family);
+	font-size: 20px;
+}
+header{
+	background-color: var(--red);
+	padding: 15px;
 }
 nav{
 	display:flex;
@@ -77,6 +83,22 @@ nav a{
 	text-decoration: none;
     color: var(--pink);
 }
+#top{
+	background-color: var(--red);	
+	color:var(--white);
+	height: 550px;
+	padding: 10px;
+	display:grid;
+	display:flex;
+	justify-content:center;
+	grid-template-columns: 1fr 1fr;
+}
 #top img{
     width: 300px;
+}
+h1{
+	font-size: 50px;
+}
+h2{
+	text-align:center;
 }
