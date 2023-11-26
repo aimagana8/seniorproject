@@ -53,35 +53,57 @@ table {
 :root{
 	--pink: #f79d92;
     --pinkhover: #f88d7e;
-	--red: rgb(174, 6, 6);
+	--red: rgb(143, 19, 19);
 	--black:#020202;
 	--graywhite: #e3e5e7;
     --white: #FFFF;
 	--font-family: "Libre Baskerville", serif;
 }
 body{
-    width: 1280px;
     margin: 0 auto;
     font-family:var(--font-family);
 	font-size: 20px;
 }
 header{
 	background-color: var(--red);
-	padding: 15px;
+	padding: 15px; 
+}
+header div{
+	margin-left: 60px;
+	margin-top: 30px;
+	display:flex;
 }
 nav{
 	display:flex;
 	justify-content:right;
+	margin-right:60px;
+}
+nav img{
+	width:15px;
 }
 nav ul {
 	text-align:center;
+	display:flex;
+	padding-bottom:20px;
 }
 nav li{
     display:inline;
+	padding-left:30px;
+	padding-right:30px;
+	font-size: 18px;
 }
 nav a{
 	text-decoration: none;
     color: var(--pink);
+}
+h1{
+	font-size: 40px;
+	font-weight: bold;
+	padding: 5px;
+	padding-top: 30px;
+}
+h2{
+	text-align:center;
 }
 #top{
 	background-color: var(--red);	
@@ -92,14 +114,26 @@ nav a{
 	display:flex;
 	justify-content:center;
 	grid-template-columns: 1fr 1fr;
+	padding-top:120px;
+	grid-gap:100px;
+}
+#top div p{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 400px;
+	line-height: 1.8;
 }
 #top img{
-    width: 300px;
+    width: 300px;	
 }
-h1{
-	font-size: 50px;
-	font-style: bold;
+#top p{
+	padding: 5px;
 }
-h2{
-	text-align:center;
+#top button{
+	background-color: rgb(63, 0, 0);
+	color: var(--white);
+	width: 200px;
+	height: 40px;
 }
+
+
