@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap'); 
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -53,30 +54,247 @@ table {
 :root{
 	--pink: #f79d92;
     --pinkhover: #f88d7e;
+	--red: rgb(143, 19, 19);
 	--black:#020202;
 	--graywhite: #e3e5e7;
     --white: #FFFF;
 	--font-family: "Libre Baskerville", serif;
 }
 body{
-    width: 1280px;
     margin: 0 auto;
     font-family:var(--font-family);
+	font-size: 20px;
 }
+header{
+	background-color: var(--red);
+	padding: 15px; 
+}
+/* Logo */
+header div a{
+	padding-top:20px;
+	margin-bottom:-10px;
+	padding-left:50px;
+	height:30px;
+	display:flex;
+}
+/* Navigation */
 nav{
 	display:flex;
 	justify-content:right;
+	margin-right:60px;
+}
+nav img{
+	width:15px;
 }
 nav ul {
 	text-align:center;
+	display:flex;
+	padding-bottom:20px;
 }
 nav li{
     display:inline;
+	padding-left:30px;
+	padding-right:30px;
+	font-size: 14px;
 }
 nav a{
 	text-decoration: none;
     color: var(--pink);
 }
-#top img{
-    width: 300px;
+h1{
+	font-size: 40px;
+	font-weight: bold;
+	padding: 5px;
+	padding-top: 30px;
 }
+h2{
+	text-align:center;
+	font-size: 30px;
+}
+/* top of page section*/
+#top{
+	background-color: var(--red);	
+	color:var(--white);
+	height: 550px;
+	padding: 10px;
+	display:grid;
+	display:flex;
+	justify-content:center;
+	grid-template-columns: 1fr 1fr;
+	padding-top:120px;
+	grid-gap:100px;
+}
+#top div p{
+	padding-top: 40px;
+	padding-bottom: 50px;
+	width: 400px;
+	line-height: 1.8;
+	font-size: 18px;
+}
+#top img{
+    width: 300px;	
+}
+#top p{
+	padding: 5px;
+}
+button{
+	background-color: rgb(63, 0, 0);
+	color: var(--white);
+	width: 200px;
+	height: 40px;
+	font-family: "Libre Baskerville", serif;
+	border-radius: 2px;
+	font-size:15px;
+}
+/*Coffee features section*/
+#featured{
+	display:flex;
+	text-align:center;
+	margin-top:40px;
+	margin-bottom:40px;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap:20px;
+}
+#featured img{
+	padding-bottom:10px;
+}
+#featured p{
+	padding-top:10px;
+	font-size:15px;
+	margin-left:40px;
+	margin-right:40px;
+	line-height: 1.5;
+}
+/* Learn more section*/
+#info img{
+	width:1500px;
+	height:400px;
+	opacity:0.5;
+}
+#info h2{
+	color: var(--red);
+	padding-bottom: 30px;
+	font-weight:bold;
+}
+#info{
+	text-align:center;
+	position:relative;
+}
+.center{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#info p{
+	padding-bottom: 30px;
+}
+/*Review section */
+.checked{
+	color:#f79d92;
+}
+#reviews{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display:flex;
+	justify-content:center;
+	padding:50px;
+	margin-top:120px;
+	margin-bottom:100px;
+	grid-gap: 400px;
+}
+#star{
+	display:flex;
+	justify-content:center;
+
+}
+#quote{
+	color:var(--red);
+	font-weight: bold;
+}
+#reviews h2{
+	width:10px;
+	line-height: 2;
+}
+#reviews p{
+	padding-top:15px;
+	text-align:center;
+	font-size:18px;
+	width:200px;
+	line-height:1.5;
+}
+#rButton1{
+	margin-left:-150px;
+	margin-right:-350px;
+	margin-top:80px;
+}
+#rButton2{
+	margin-right:-150px;
+	margin-left:-350px;
+	margin-top:80px;
+}
+.revButton{
+	border-radius:50%;
+	justify-content:center;
+	background-color:var(--graywhite);
+	border:none;
+	width:40px;
+}
+/* How it works section */
+#process {
+	position: relative;
+	padding-bottom: 200px;
+	border-top:2px solid var(--graywhite);
+}
+#process h2{
+	color: var(--red);
+	padding-top:100px;
+	padding-bottom: 30px;
+}
+#process2 {
+	display:flex;
+	text-align:center;
+	margin-top:40px;
+	margin-bottom:40px;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap:20px;
+}
+#process2 p{
+	padding-top:10px;
+	font-size:15px;
+	margin-left:60px;
+	margin-right:60px;
+	line-height: 1.5;
+}
+#process button{
+	margin-top:180px;
+}
+/*footer*/
+#footer{
+	background-color:var(--graywhite);
+	padding: 60px;
+}
+#footer div{
+	display:flex;
+	justify-content:center;
+}
+#footer img{
+	padding-left:10px;
+	padding-right:10px;
+}
+#footer ul{
+	display:flex;
+	justify-content:center;
+}
+#footer li{
+	padding-left: 100px;
+	padding-right: 100px;
+	font-size:15px;
+	margin-bottom:-50px;
+	margin-top:50px;
+}
+
+
+

@@ -6,16 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Araceli Magana">
         <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     </head>
     <body>
         <header>
-            <a href="#"><img src="images/Logo.webp" alt="Many Worlds Tavern Logo"></a>
+            <div>
+            <a href="#top"><img src="images/Logo.webp" alt="Many Worlds Tavern Logo"></a>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#info">About us</a></li>
+                    <li><a href="#info">Shop</a></li>
+                    <li><a href="#footer">Contact us</a></li>
                     <li><a href="#"><img src="images/userpic.png" alt="user icon"></a></li>
                     <li><a href="#"><img src="images/cartpic.png" alt="cart icon"></a></li>
                 </ul>
@@ -25,11 +28,92 @@
             <section id="top">
                 <div>
                     <h1>Coffee for Game Night</h1>   
-                    <p>Insert Text</p>
+                    <p>Subscribe to get our specialty hand-crafted coffee delivered straight to your door.</p>
                     <button>SUBSCRIBE NOW</button>
+                </div>
+                <div>
                     <img src="images/OldOne.webp" alt="coffee bag of dark roast">
                  </div>
             </section>
+            <section id="featured">
+                <div>
+                    <img src="images/darkcup.svg" alt="image of darkened coffee cup">
+                    <h3>Unique Coffee for Game Night</h3>
+                    <p>Choose from a variety of coffee and teas that are perfect for cozy game nights.</p>
+                 </div>
+                 <div>
+                    <img src="images/shopping-bag.svg" alt="image of shopping bag">
+                    <h3>$1 Dollar Donated Per Bag</h3>
+                    <p>Choose from any of our game-related nonprofits when you add to cart.</p>
+                 </div>
+                 <div>
+                    <img src="images/send.svg" alt="image of a paper airplane">
+                    <h3>Free US Shipping from $50</h3>
+                    <p>When you purchase any of our coffee, teas, or merchandise, get free shipping on orders over $50.</p>
+                 </div>  
+            </section>
+            <section id=info>
+                <img src="images/background.webp" alt="image of box with coffee bags">
+                <div class="center">
+                    <h2>Coffee and Tea</h2>
+                    <p>Choose from a variety of coffee and tea that are perfect for game nights.</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </section>
+            <section id="reviews">
+                <div>
+                    <h2>What People Are Saying</h2>
+                </div>
+                <div id="rButton1">
+                    <button class="revButton"><img src="images/circle-left.svg" alt="image of circle with left arrow"></button>
+                </div>
+                <div>
+                    <div id="star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p><span id="quote">"</span>We love getting our monthly coffee! The packaging is also really creative and shipping was fast!</p>
+                    <p>-Sarah</p>
+                </div>
+                <div id="rButton2">
+                    <button class="revButton"><img src="images/circle-right.svg" alt="image of circle with right arrow"></button>
+                </div>
+            </section>
+            <section id="process">
+                <h2>How It Works</h2>
+                <div id="process2">
+                    <div>
+                        <img src="images/coffee.svg" alt="image of coffee cup with steam">
+                        <p>Choose any of our hand-crafted coffee or teas and subscribe.</p>
+                    </div>
+                    <div>
+                        <img src="images/truck.svg" alt="image of truck">
+                        <p>Subscribe and get free shipping on orders over $50.</p>
+                    </div>
+                    <div>
+                        <img src="images/package.svg" alt="image of package">
+                        <p>Get it delivered straight to your door.</p> 
+                    </div>
+                </div>
+                <div class="center">
+                    <button>SUBSCRIBE NOW</button>
+                </div>
+            </section>
         </main>
+        <footer id="footer">
+            <div>
+                <img src="images/instagram.svg" alt="image of instagram logo">
+                <img src="images/facebook.svg" alt="image of facebook logo">
+                <img src="images/twitter.svg" alt="image of twitter logo">
+            </div>
+            <ul>
+                <li>Terms of Service</li>
+                <li>&copy2023, Many Worlds Tavern</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </footer>
     </body>
 </html>
