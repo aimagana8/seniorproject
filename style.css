@@ -4,6 +4,7 @@
    License: none (public domain)
 */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -53,8 +54,9 @@ table {
 }
 :root{
 	--pink: #f79d92;
-    --pinkhover: #f88d7e;
-	--red: rgb(143, 19, 19);
+    --pinkhover: #ffe3e0;
+	--red: rgb(97, 4, 1);
+	--btnhover:#4d1010;
 	--black:#020202;
 	--graywhite: #e3e5e7;
     --white: #FFFF;
@@ -95,11 +97,14 @@ nav li{
     display:inline;
 	padding-left:30px;
 	padding-right:30px;
-	font-size: 14px;
+	font-size: 16px;
 }
 nav a{
 	text-decoration: none;
     color: var(--pink);
+}
+nav a:hover{
+	color:var(--pinkhover);
 }
 h1{
 	font-size: 40px;
@@ -110,6 +115,10 @@ h1{
 h2{
 	text-align:center;
 	font-size: 30px;
+	font-weight:bold;
+}
+p{
+	font-family: 'Raleway', sans-serif;
 }
 /* top of page section*/
 #top{
@@ -140,11 +149,16 @@ h2{
 button{
 	background-color: rgb(63, 0, 0);
 	color: var(--white);
-	width: 200px;
+	width: 180px;
 	height: 40px;
-	font-family: "Libre Baskerville", serif;
+	font-family: 'Raleway', sans-serif;
 	border-radius: 2px;
 	font-size:15px;
+	border:1px solid rgb(49, 2, 2);
+}
+button:hover{
+	background-color:var(--btnhover);
+	border:1px solid #460f0f;
 }
 /*Coffee features section*/
 #featured{
@@ -161,20 +175,15 @@ button{
 }
 #featured p{
 	padding-top:10px;
-	font-size:15px;
+	font-size:18px;
 	margin-left:40px;
 	margin-right:40px;
 	line-height: 1.5;
 }
 /* Learn more section*/
-#info img{
-	width:1500px;
-	height:400px;
-	opacity:0.5;
-}
 #info h2{
 	color: var(--red);
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 	font-weight:bold;
 }
 #info{
@@ -187,65 +196,76 @@ button{
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+#info img{
+	width:100%;
+	height:500px;
+	opacity:0.45;
+}
 #info p{
-	padding-bottom: 30px;
+	padding-bottom: 50px;
+	font-weight:bold;
 }
 /*Review section */
-.checked{
-	color:#f79d92;
-}
 #reviews{
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	display:flex;
 	justify-content:center;
-	padding:50px;
-	margin-top:120px;
-	margin-bottom:100px;
-	grid-gap: 400px;
+	margin-top:-3px;
+	padding:150px;
+	grid-gap: 300px;
+	background-color:#f5f5f5;
 }
-#star{
+.rating{
+	display:inline;
 	display:flex;
 	justify-content:center;
-
+}
+.rating svg{
+	margin-left:-5px;
+	margin-right:-5px;
 }
 #quote{
 	color:var(--red);
 	font-weight: bold;
 }
 #reviews h2{
-	width:10px;
+	width:200px;
 	line-height: 2;
+	text-align:left;
 }
 #reviews p{
 	padding-top:15px;
 	text-align:center;
-	font-size:18px;
-	width:200px;
+	font-size:20px;
+	width:300px;
 	line-height:1.5;
 }
 #rButton1{
-	margin-left:-150px;
-	margin-right:-350px;
+	margin-left:-50px;
+	margin-right:-250px;
 	margin-top:80px;
 }
 #rButton2{
-	margin-right:-150px;
-	margin-left:-350px;
+	margin-right:-50px;
+	margin-left:-250px;
 	margin-top:80px;
 }
 .revButton{
 	border-radius:50%;
 	justify-content:center;
-	background-color:var(--graywhite);
+	background-color:#c5c5c5;
 	border:none;
 	width:40px;
+}
+.revButton:hover{
+	background-color:#d4d4d4;
+	border:none;
 }
 /* How it works section */
 #process {
 	position: relative;
 	padding-bottom: 200px;
-	border-top:2px solid var(--graywhite);
 }
 #process h2{
 	color: var(--red);
@@ -263,7 +283,7 @@ button{
 }
 #process2 p{
 	padding-top:10px;
-	font-size:15px;
+	font-size:18px;
 	margin-left:60px;
 	margin-right:60px;
 	line-height: 1.5;
@@ -273,8 +293,10 @@ button{
 }
 /*footer*/
 #footer{
-	background-color:var(--graywhite);
+	background-color:var(--red);
 	padding: 60px;
+	font-family: "Libre Baskerville", serif;
+	color:var(--pink);
 }
 #footer div{
 	display:flex;
@@ -283,6 +305,12 @@ button{
 #footer img{
 	padding-left:10px;
 	padding-right:10px;
+	background-color:var(--pink);
+	margin-left:10px;
+	margin-right:10px;
+	border-radius:50%;
+	width:20px;
+	height:40px;
 }
 #footer ul{
 	display:flex;
@@ -295,6 +323,8 @@ button{
 	margin-bottom:-50px;
 	margin-top:50px;
 }
-
+@media (max-width: 768px){
+	
+}
 
 
