@@ -163,14 +163,14 @@ button:hover{
 #featured{
 	display:flex;
 	text-align:center;
-	margin-top:40px;
+	margin-top:50px;
 	margin-bottom:40px;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap:20px;
+	grid-gap:10px;
 }
 #featured img{
-	padding-bottom:10px;
+	padding-bottom:20px;
 }
 #featured p{
 	padding-top:10px;
